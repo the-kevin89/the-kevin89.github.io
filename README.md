@@ -1,2 +1,2 @@
-# the-kevin89.github.io
+# MinecraftVerse
 Una red social enfocada en Minecraft
