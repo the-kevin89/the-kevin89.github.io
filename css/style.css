@@ -43,10 +43,6 @@ nav ul {
     gap: 2rem;
 }
 
-#todo header img {
-    max-width: 274px;
-}
-
 #logo2 {
     max-width: 100%;
     display: none;
