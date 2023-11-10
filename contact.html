@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR" id="todo">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <title>Blogcraft | Contacto</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -20,10 +21,11 @@
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-        <img src="img/logo.png" alt="Logo de Blogcraft">
+        <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo">
     </header>
+    <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft"  id="logo2">
 
-    <main class="text">
+    <main class="text" style="background-color: #f2f2f2; padding: 2rem 0;">
         <h2>Contacto</h2>
         <p>Si tenés alguna pregunta, sugerencia o comentario sobre mi sitio web o sobre Minecraft en general, por favor contactame a través del siguiente formulario:</p>
 
@@ -38,20 +40,16 @@
             <input type="text" name="asunto" id="asunto" required>
 
             <label for="mensaje">Mensaje:</label>
-            <textarea name="mensaje" id="mensaje" required></textarea>
+            <textarea name="mensaje" id="mensaje"></textarea>
 
             <button type="submit">Enviar</button>
         </form>
     </main>
 
     <footer>
-        <small>&copy; 2023 Blogcraft. Todos los derechos reservados.</small>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+        <p>&copy; 2023 Blogcraft. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR" id="todo">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <title>Blogcraft | Acerca de</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -20,24 +21,62 @@
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-        <img src="img/logo.png" alt="Logo de Blogcraft">
+        <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo">
     </header>
+    <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo2">
 
-    <main class="text">
+    <main class="text" style="background-color: #f2f2f2; padding: 1rem 0 2rem;">
         <h2>Sobre mí</h2>
-        <p>Blogcraft es un sitio web dedicado a compartir información, noticias y consejos sobre el juego Minecraft. Mí objetivo es proporcionar contenido de alta calidad y útil para la comunidad de Minecraft.</p>
-        <p>En mí sitio web, encontrarás una variedad de publicaciones sobre diferentes temas relacionados con Minecraft, desde guías y tutoriales hasta noticias sobre actualizaciones y eventos.</p>
-        <p>Además, siempre estoy dispuesto a ayudar y responder a las preguntas de mi comunidad.</p>
+        <p>Blogcraft es un sitio web dedicado a compartir información, noticias y consejos sobre el juego Minecraft. Mi objetivo es proporcionar contenido de alta calidad y útil para la comunidad de Minecraft.</p>
+        <p>En mi sitio web, encontrarás una variedad de publicaciones sobre diferentes temas relacionados con Minecraft, desde guías y tutoriales hasta noticias sobre actualizaciones y eventos.</p>
+        <p>Además, siempre estoy dispuesto a ayudar y responder a las preguntas de la comunidad.</p>
+
+        <div class="accordion" id="faq">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Pregunta frecuente #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La pregunta frecuente #1.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pregunta frecuente #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La pregunta frecuente #2.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Pregunta frecuente #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La pregunta frecuente #3.
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
-        <small>&copy; 2023 Blogcraft. Todos los derechos reservados.</small>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+        <p>&copy; 2023 Blogcraft. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>

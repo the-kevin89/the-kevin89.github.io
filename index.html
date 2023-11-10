@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR" id="todo">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <title>Blogcraft</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 <body>
     <header>
@@ -20,51 +21,62 @@
                 <li><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-        <img src="img/logo.png" alt="Logo de Blogcraft">
+        <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo">
     </header>
+    <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo2">
 
     <main>
         <section class="hero">
             <div class="hero-content">
                 <h2>Bienvenido a Blogcraft</h2>
-                <p>Descubrí las últimas noticias, actualizaciones y consejos sobre el popular juego de Minecraft.</p>
-                <a href="" class="btn">Leer más</a>
+                <p>Descubrí las últimas noticias, actualizaciones y consejos sobre Minecraft.</p>
+                <a href="" class="button" data-bs-toggle="modal" data-bs-target="#leerMas">Leer más</a>
             </div>
         </section>
 
+        <div class="modal fade" id="leerMas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-sm m-auto">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Próximamente</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="asdBoton"></button>
+                    </div>
+                    <div class="modal-body">
+                        Trabajo en progreso...
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <section class="featured-posts">
-            <h2 class="featured-title">Posts Destacados</h2>
+            <h2 class="featured-title">Posts destacados</h2>
             <div class="posts-container">
                 <div class="post">
-                    <img src="https://via.placeholder.com/350x150" alt="Imagen del post 1">
-                    <h3>5 cosas que tenés que saber sobre Minecraft 1.19</h3>
-                    <p>El lanzamiento de la nueva versión de Minecraft 1.19 es uno de los más esperados por los fans del juego. Descubrí las principales novedades de esta versión.</p>
-                    <a href="" class="btn">Leer más</a>
+                    <img src="img/imagen.png" alt="Imagen del post 1">
+                    <h3>5 cosas que tenés que saber sobre Minecraft 1.20</h3>
+                    <p>El lanzamiento de la nueva versión de Minecraft 1.20 es uno de los más esperados por los fans del juego. Descubrí las principales novedades de esta versión.</p>
+                    <a href="" class="button">Leer más</a>
                 </div>
                 <div class="post">
-                    <img src="https://via.placeholder.com/350x150" alt="Imagen del post 2">
+                    <img src="img/imagen.png" alt="Imagen del post 2">
                     <h3>10 consejos para sobrevivir en Minecraft</h3>
                     <p>Sobrevivir en Minecraft no es tarea fácil, especialmente si sos nuevo en el juego. Acá te damos algunos consejos útiles para que podás sobrevivir en el mundo de Minecraft.</p>
-                    <a href="" class="btn">Leer más</a>
+                    <a href="" class="button">Leer más</a>
                 </div>
                 <div class="post">
-                    <img src="https://via.placeholder.com/350x150" alt="Imagen del post 3">
+                    <img src="img/imagen.png" alt="Imagen del post 3">
                     <h3>Los mejores mods para Minecraft</h3>
-                    <p>Los mods son una parte importante del ecosistema de Minecraft, ya que permiten a los jugadores personalizar y mejorar el juego de muchas maneras diferentes. Descubrí los mejores mods para Minecraft.</p>
-                    <a href="" class="btn">Leer más</a>
+                    <p>Los mods son una parte importante del ecosistema de Minecraft, ya que permiten a los jugadores personalizar y mejorar el juego de muchas maneras diferentes. Descubrí los...</p>
+                    <a href="" class="button">Leer más</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <small>&copy; 2023 Blogcraft. Todos los derechos reservados.</small>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="posts.html">Posts</a></li>
-            <li><a href="about.html">Acerca de</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+        <p>&copy; 2023 Blogcraft. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
