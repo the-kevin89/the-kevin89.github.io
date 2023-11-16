@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <title>Blogcraft</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg lg-body-tertiary">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="assets/Blogcraft_logo.png" alt="Blogcraft logo" id="logo"></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="posts.html" class="nav-link">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo" style="max-width: 274px;">
     </header>
-    <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo2" style="max-width: 100%; display: none;">
 
     <main>
         <section class="hero">
@@ -52,19 +66,19 @@
             <h2 class="featured-title">Posts destacados</h2>
             <div class="posts-container">
                 <div class="post">
-                    <img src="img/imagen.png" alt="Imagen del post 1">
+                    <img src="assets/imagen.png" alt="Imagen del post 1">
                     <h3>5 cosas que tenés que saber sobre Minecraft 1.20</h3>
                     <p>El lanzamiento de la nueva versión de Minecraft 1.20 es uno de los más esperados por los fans del juego. Descubrí las principales novedades de esta versión.</p>
                     <a href="" class="button">Leer más</a>
                 </div>
                 <div class="post">
-                    <img src="img/imagen.png" alt="Imagen del post 2">
+                    <img src="assets/imagen.png" alt="Imagen del post 2">
                     <h3>10 consejos para sobrevivir en Minecraft</h3>
                     <p>Sobrevivir en Minecraft no es tarea fácil, especialmente si sos nuevo en el juego. Acá te damos algunos consejos útiles para que podás sobrevivir en el mundo de Minecraft.</p>
                     <a href="" class="button">Leer más</a>
                 </div>
                 <div class="post">
-                    <img src="img/imagen.png" alt="Imagen del post 3">
+                    <img src="assets/imagen.png" alt="Imagen del post 3">
                     <h3>Los mejores mods para Minecraft</h3>
                     <p>Los mods son una parte importante del ecosistema de Minecraft, ya que permiten a los jugadores personalizar y mejorar el juego de muchas maneras diferentes. Descubrí los...</p>
                     <a href="" class="button">Leer más</a>

@@ -1,51 +1,30 @@
 /* Global */
 
-#todo * {
-    margin: 0;
-    padding: 0;
-}
-
 #todo header {
     background-color: #2c3e50;
-    display: flex;
-    position: sticky;
-    top: 0;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1rem 1rem 1.75rem;
 }
 
-#todo a {
-    text-decoration: none;
-}
-
-#todo header a {
+#todo .nav-link {
     color: #fff;
     background-color: #416c97;
     padding: .5rem 1rem;
     border-radius: 20px;
 }
 
-#todo header a:hover {
+#todo .nav-link:hover {
     background-color: #375a7c;
 }
 
-header li {
-    line-height: 0;
+#todo .navbar-toggler {
+    background-color: #416c97;
 }
 
-ul {
-    list-style: none;
+#logo {
+    max-width: 224px;
 }
 
-nav ul {
-    display: flex;
-    gap: 2rem;
-}
-
-#logo2 {
-    max-width: 100%;
-    display: none;
+#todo a {
+    text-decoration: none;
 }
 
 #todo footer {
@@ -55,12 +34,8 @@ nav ul {
     padding: 1rem;
 }
 
-#todo footer a {
-    display: inline-flex;
-}
-
-#todo footer a:hover {
-    text-decoration: underline;
+#todo footer p {
+    margin: 0;
 }
 
 /* Páginas "Inicio" y "Posts" */
@@ -131,34 +106,9 @@ nav ul {
 
 /* Páginas "Acerca de" y "Contacto" */
 
-#todo .text h2 {
-    padding: 1rem;
-}
-
-#todo .text p {
-    padding: 0 1rem 0 1rem;
-    text-align: justify;
-}
-
-#faq {
-    margin: 1rem;
-}
-
-#faq .accordion-button {
-    background-color: #416c97;
-}
-
-#faq .accordion-button:hover {
-    background-color: #375a7c;
-}
-
-#faq .accordion-body {
-    margin: 0 1rem 1rem;
-}
-
 #todo form {
     max-width: 600px;
-    margin: 1rem auto 0;
+    margin: auto;
 }
 
 #todo input[type="text"], #todo input[type="email"], #todo textarea {
@@ -177,7 +127,7 @@ nav ul {
     resize: none;
 }
 
-#todo button {
+.enviar {
     display: block;
     margin: 1rem auto;
     padding: .5rem 1rem;
@@ -188,21 +138,10 @@ nav ul {
     font-weight: bold;
 }
 
-#todo button:hover {
+.enviar:hover {
     background-color: #3e8e41;
 }
 
-/* Modal */
-
-#leerMas .modal-header {
-    margin: 0 .5rem;
-}
-
-#leerMas .modal-body {
-    margin: .5rem;
-}
-
-#leerMas #asdBoton {
-    margin: 1rem 0;
-    background-color: transparent;
+.elMain {
+    margin: 1rem;
 }

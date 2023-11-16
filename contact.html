@@ -3,29 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <title>Blogcraft | Contacto</title>
+    <title>Blogcraft</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="posts.html">Posts</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg lg-body-tertiary">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="assets/Blogcraft_logo.png" alt="Blogcraft logo" id="logo"></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="posts.html" class="nav-link">Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link active" aria-current="page">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo" style="max-width: 274px;">
     </header>
-    <img src="img/Minecraft_logo.png" alt="Logo de Blogcraft" id="logo2" style="max-width: 100%; display: none;">
 
-    <main class="text" style="background-color: #f2f2f2; padding: 2rem 0;">
+    <main class="elMain">
         <h2>Contacto</h2>
         <p>Si tenés alguna pregunta, sugerencia o comentario sobre mi sitio web o sobre Minecraft en general, por favor contactame a través del siguiente formulario:</p>
 
@@ -42,7 +56,7 @@
             <label for="mensaje">Mensaje:</label>
             <textarea name="mensaje" id="mensaje"></textarea>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" class="enviar">Enviar</button>
         </form>
     </main>
 

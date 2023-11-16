@@ -1,47 +1,22 @@
-@media (max-width: 767px) {
-    #todo header {
-        position: relative;
-        padding: 2rem;
-        justify-content: center;
-    }
-
-    #todo header ul {
-        gap: .5rem;
-    }
-
-    #logo {
-        display: none;
-    }
-
-    #logo2 {
-        display: block;
-    }
-
+@media (max-width: 637px) {
     #todo .posts-container {
         display: block;
-        margin: 0;
     }
 
     #todo .post {
         width: 100%;
-        margin: 2rem 0;
-    }
-
-    #todo article p {
-        margin-bottom: 10rem;
-    }
-
-    #todo form {
-        margin: 0 1rem;
+        margin: 1rem 0 0;
     }
 }
 
-@media (max-width: 424px) {
-    #todo header ul {
-        display: block;
+@media (min-width: 769px) {
+    #todo .nav-link {
+        margin-right: 2rem;
     }
+}
 
-    #todo header li {
-        padding: 1.5rem 0;
+@media (max-width: 768px) {
+    #todo .nav-link {
+        margin-top: 1rem;
     }
 }
