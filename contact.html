@@ -10,6 +10,17 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <style>
+        #todo #g-recaptcha-response {
+            display: block !important;
+            position: absolute;
+            margin: -50px 0 0 0 !important;
+            z-index: -999999;
+            opacity: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -56,6 +67,8 @@
             <label for="Mensaje">Mensaje:</label>
             <textarea name="Mensaje" id="Mensaje" required></textarea>
 
+            <div class="g-recaptcha" data-sitekey="6LcEMxMpAAAAAKC6W1MFvsGoKfZ4ZK1nNAq3YVxp"></div><br>
+
             <button type="submit" class="enviar">Enviar</button>
         </form>
     </main>
@@ -65,5 +78,14 @@
     </footer>
 
     <script src="bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            var el = document.getElementById('g-recaptcha-response');
+            if (el) {
+                el.setAttribute('required', 'required');
+            }
+        }
+    </script>
 </body>
 </html>
