@@ -27,6 +27,10 @@
     text-decoration: none;
 }
 
+#todo p:last-child {
+    margin-bottom: 0;
+}
+
 #todo footer {
     background-color: #2c3e50;
     color: #fff;
@@ -46,6 +50,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #fff;
 }
 
 .featured-title {
@@ -62,6 +67,7 @@
 }
 
 #todo .button:hover {
+    transition: 300ms;
     background-color: #375a7c;
 }
 
@@ -82,6 +88,7 @@
     margin: 1rem;
     width: 30%;
     border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
 }
 
 #todo .post h3 {
@@ -92,14 +99,13 @@
 .post img {
     width: 100%;
     border-radius: 20px 20px 0 0;
-    align-self: center;
 }
 
 #todo .post p {
     margin: 1rem;
 }
 
-#todo .post .date {
+#todo .date {
     color: #aaa;
     font-size: .9rem;
 }
@@ -143,5 +149,38 @@
 }
 
 .elMain {
-    margin: 1rem;
+    padding: 1.25rem;
+}
+
+/* Páginas de posts */
+
+.elMain2 {
+    background-color: #f2f2f2;
+    padding: 2rem 1rem;
+}
+
+.elMain2 .container {
+    background-color: #fff;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    border-radius: 20px;
+}
+
+.elMain2 .container-fluid {
+    padding: 0 1rem 1rem;
+}
+
+.titular {
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.post .titular {
+    height: 200px;
+}
+
+.elMain2 h2 {
+    margin-top: 1rem;
 }
