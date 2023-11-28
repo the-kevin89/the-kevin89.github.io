@@ -1,6 +1,33 @@
-/* Global */
+/* Estilos para que funcione el sitio web */
 
-#todo header {
+.light {
+    background-color: #f2f2f2;
+}
+
+.dark {
+    background-color: #2b3035;
+}
+
+.navigation {
+    display: flex;
+    gap: 12px;
+}
+
+#logo {
+    width: 182px;
+}
+
+.navbar-toggler {
+    padding: 4px 6px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos globales */
+
+nav {
     background-color: #2c3e50;
 }
 
@@ -15,172 +42,81 @@
     background-color: #375a7c;
 }
 
-#todo .navbar-toggler {
-    background-color: #416c97;
-}
-
-#logo {
-    max-width: 224px;
-}
-
-#todo a {
-    text-decoration: none;
-}
-
-#todo p:last-child {
-    margin-bottom: 0;
-}
-
-#todo footer {
+footer {
     background-color: #2c3e50;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
-#todo footer p {
-    margin: 0;
-}
-
 /* Páginas "Inicio" y "Posts" */
 
 .hero {
-    height: 50svh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
 }
 
-.featured-title {
-    text-align: center;
+.card {
+    margin-bottom: 2rem;
+    border-radius: 20px;
 }
 
-#todo .button {
-    display: inline-block;
-    color: #fff;
+.card-img-top {
+    border-radius: 20px 20px 0 0;
+}
+
+.bcBtn {
     background-color: #416c97;
+    border: none;
     padding: .5rem 1rem;
     border-radius: 20px;
-    margin-top: 1rem;
 }
 
-#todo .button:hover {
-    transition: 300ms;
+.bcBtn:hover {
     background-color: #375a7c;
 }
 
-#todo .featured-posts {
-    background-color: #f2f2f2;
-    padding: 2rem 0;
+#todo .bcBtn:active {
+    background-color: #375a7c;
 }
 
-#todo .posts-container {
-    max-width: 1200px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-}
+/* Página "Contacto" */
 
-#todo .post {
-    background-color: #fff;
-    margin: 1rem;
-    width: 30%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
-}
-
-#todo .post h3 {
-    margin: 1rem;
-    font-size: 1.5rem;
-}
-
-.post img {
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-}
-
-#todo .post p {
-    margin: 1rem;
-}
-
-#todo .date {
-    color: #aaa;
-    font-size: .9rem;
-}
-
-/* Páginas "Acerca de" y "Contacto" */
-
-#todo form {
-    max-width: 600px;
-    margin: auto;
-}
-
-#todo input[type="text"], #todo input[type="email"], #todo textarea {
-    display: block;
-    width: 100%;
-    padding: .5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#todo label {
-    margin-top: 1rem;
-}
-
-#todo textarea {
+#Mensaje {
     resize: none;
 }
 
-.enviar {
-    display: block;
-    margin: 1rem auto;
-    padding: .5rem 1rem;
-    border: none;
-    border-radius: 20px;
+#enviar {
     background-color: #4caf50;
     color: #fff;
     font-weight: bold;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    margin: 1.5rem calc(50% - 34.195px);
 }
 
-.enviar:hover {
+#enviar:hover {
     background-color: #3e8e41;
 }
 
-.elMain {
-    padding: 1.25rem;
-}
+/* Páginas de posts individuales */
 
-/* Páginas de posts */
-
-.elMain2 {
-    background-color: #f2f2f2;
-    padding: 2rem 1rem;
-}
-
-.elMain2 .container {
-    background-color: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
-    padding: 0;
+.individualPost .container {
     border-radius: 20px;
 }
 
-.elMain2 .container-fluid {
-    padding: 0 1rem 1rem;
+.individualPost .container p:last-child {
+    margin: 0;
 }
 
 .titular {
-    height: 250px;
-    border-radius: 20px 20px 0 0;
+    height: 175px;
     background-size: cover;
     background-position: center;
+    border-radius: 20px 20px 0 0;
 }
 
-.post .titular {
-    height: 200px;
-}
-
-.elMain2 h2 {
-    margin-top: 1rem;
+.post {
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.5);
 }

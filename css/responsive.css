@@ -1,32 +1,45 @@
-@media (max-width: 637px) {
-    #todo .posts-container {
-        display: block;
-    }
+/* Estilos para que funcione el sitio web */
 
-    #todo .post {
-        width: 100%;
-        margin: 1rem 0 0;
+@media (min-width: 375px) {
+    #logo {
+        width: 225px;
     }
 }
 
-@media (min-width: 769px) {
-    #todo .nav-link {
-        margin-right: 2rem;
+@media (max-width: 1023px) {
+    #btnSwitch2 {
+        display: none;
     }
 }
+
+/* Estilos de posts individuales */
+
+@media (min-width: 426px) {
+    .titular {
+        height: 225px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #btnSwitch1 {
+        display: none;
+    }
+
+    .titular {
+        height: 300px;
+    }
+}
+
+/* Estilos del navbar */
 
 @media (max-width: 768px) {
-    #todo .nav-link {
+    .nav-link {
         margin-top: 1rem;
     }
 }
 
-@media (max-width: 1024px) {
-    #todo .posts-container {
-        flex-wrap: wrap;
-    }
-
-    #todo .post {
-        min-width: 45%;
+@media (min-width: 769px) {
+    .nav-link {
+        margin-right: 2rem;
     }
 }
