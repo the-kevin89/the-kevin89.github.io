@@ -8,4 +8,4 @@ Una red social enfocada en Minecraft.
 
 ## [Randomness](https://the-kevin89.github.io/randomness/index.html)
 
-Mini-recopilación de lo que para mí representaron estos años.
+Mini-recopilación de lo que, para mí, representaron estos años.
