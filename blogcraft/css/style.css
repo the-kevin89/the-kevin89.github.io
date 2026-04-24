@@ -1,5 +1,10 @@
 /* Estilos para que funcione el sitio web */
 
+@font-face {
+  font-family: LdfComicSans;
+  src: url(../assets/Ldfcomicsans.ttf);
+}
+
 .light {
   background-color: #f2f2f2;
 }
@@ -15,6 +20,7 @@
 
 #logo {
   width: 182px;
+  font-family: LdfComicSans;
 }
 
 .navbar-toggler {
