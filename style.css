@@ -1,43 +1,70 @@
 * {
   margin: 0;
   padding: 0;
-  line-height: 1;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 
 body {
   padding: 30px;
+  text-align: center;
+  background: #f5f7fa;
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 42px;
   margin-bottom: 30px;
 }
 
-img {
-  border: 10px solid black;
-  border-radius: 25px;
-  max-width: 250px;
-  transition: ease 250ms;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-img:hover {
-  transition: ease 250ms;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+/* Card */
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 150ms ease, box-shadow 150ms ease;
+  border: 1px solid rgb(200, 200, 200);
 }
 
-div {
-  display: inline-block;
+.card img {
+  width: 100%;
+  display: block;
 }
 
-@media (min-width: 530px) {
-  div {
-    margin-right: 30px;
+.card h2 {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
   }
+}
 
-  div:last-of-type {
-    margin-right: 0;
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
   }
 }
