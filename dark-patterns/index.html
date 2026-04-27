@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decisiones que importan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            color: white;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+            font-size: 48px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(66, 66, 66);
+            border: none;
+            padding: 15px 25px;
+            font-size: 16px;
+            border-radius: 15px;
+            transition: 200ms ease;
+        }
+
+        button:hover {
+            background-color: rgb(39, 39, 39);
+        }
+
+        .opciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .consecuencias {
+            display: none;
+        }
+
+        .consecuencias p:last-child {
+            margin-top: 60px;
+        }
+
+        h2 {
+            margin: 10px 0 30px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgb(39, 39, 39);
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 15px;
+            text-align: left;
+        }
+
+        .icon {
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            transition: 200ms ease;
+        }
+
+        a:hover {
+            color: rgb(185, 185, 185);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><a href="/dark-patterns/">Dark Patterns</a></h1>
+        <section id="dilema">
+            <p>Sos diseñador/a UX en una empresa digital. Un cliente te pide diseñar un sistema de suscripción donde sea muy fácil registrarse, pero difícil cancelar, con el objetivo de aumentar la retención de usuarios.</p>
+            <p>Como profesional, debés decidir cómo responder a esta solicitud.</p>
+            <p>¿Qué decisión tomás?</p>
+            <div class="opciones">
+                <button id="evil">Aceptar la propuesta</button>
+                <button id="good">Diseñar sistema transparente</button>
+            </div>
+        </section>
+
+        <section class="consecuencias" id="malas">
+            <h2>Consecuencias del diseño manipulativo</h2>
+            <div class="card">
+                <span class="icon">📈</span>
+                <span>Aumento rápido de suscripciones</span>
+            </div>
+            <div class="card">
+                <span class="icon">😡</span>
+                <span>Usuarios frustrados al intentar cancelar</span>
+            </div>
+            <div class="card">
+                <span class="icon">🔁</span>
+                <span>Procesos de cancelación complejos o poco visibles</span>
+            </div>
+            <div class="card">
+                <span class="icon">⚠️</span>
+                <span>Riesgo de pérdida de confianza en la plataforma</span>
+            </div>
+            <div class="card">
+                <span class="icon">📉</span>
+                <span>Daño a la reputación a largo plazo</span>
+            </div>
+            <p>El sistema prioriza resultados inmediatos sobre la experiencia del usuario.</p>
+        </section>
+
+        <section class="consecuencias" id="buenas">
+            <h2>Consecuencias del diseño transparente</h2>
+            <div class="card">
+                <span class="icon">👍</span>
+                <span>Usuarios con control claro sobre su suscripción</span>
+            </div>
+            <div class="card">
+                <span class="icon">🔓</span>
+                <span>Cancelación simple y accesible</span>
+            </div>
+            <div class="card">
+                <span class="icon">🤝</span>
+                <span>Mayor confianza en la plataforma</span>
+            </div>
+            <div class="card">
+                <span class="icon">📉</span>
+                <span>Menor manipulación del usuario</span>
+            </div>
+            <div class="card">
+                <span class="icon">📈</span>
+                <span>Relación más estable a largo plazo</span>
+            </div>
+            <p>El diseño prioriza la autonomía del usuario y la confianza.</p>
+        </section>
+    </main>
+    
+    <script>
+        let dilema = document.getElementById('dilema');
+        let evil_button = document.getElementById('evil');
+        let consec_malas = document.getElementById('malas');
+        let good_button = document.getElementById('good');
+        let consec_buenas = document.getElementById('buenas');
+
+        evil_button.addEventListener('click', () => {
+            consec_malas.style.display = 'block';
+            dilema.style.display = 'none';
+        });
+
+        good_button.addEventListener('click', () => {
+            consec_buenas.style.display = 'block';
+            dilema.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
